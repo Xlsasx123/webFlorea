@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FLOREA – elegantní sladké dárky vytvořené s důrazem na detail.">
+  <title>FLOREA — Sladké dárky</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <a href="#home" class="logo" aria-label="FLOREA domů">FLOREA<span>✦</span></a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Domů</a>
+    <a href="#products">Produkty</a>
+    <a href="#about">O nás</a>
+    <a href="#how">Jak objednat</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="icon-btn" id="searchBtn" aria-label="Vyhledávání">⌕</button>
+    <button class="icon-btn cart-btn" id="cartBtn" aria-label="Košík">
+      ♡ <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="menu-btn" id="menuBtn" aria-label="Otevřít menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="eyebrow">SLADKÉ DÁRKY • VYTVOŘENÉ S DETAILem</p>
+      <h1>Sladké dárky,<br><em>které řeknou</em><br>víc než slova.</h1>
+      <p class="hero-text">Originální sladké dárky vytvořené s důrazem na krásu, detail a osobní příběh.</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-dark">Prohlédnout produkty</a>
+        <a href="#contact" class="btn btn-outline">Vytvořit dárek</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-flower">✿</div>
+        <div class="hero-box">
+          <span>FLOREA</span>
+          <small>sweet moments</small>
+        </div>
+      </div>
+      <span class="floating-note note-one">made with love</span>
+      <span class="floating-note note-two">your special moment</span>
+    </div>
+  </section>
+
+  <section class="intro-strip">
+    <p>PRO KAŽDÝ OKAMŽIK</p>
+    <div class="strip-items">
+      <span>Narozeniny</span><i>✦</i>
+      <span>Oslavy</span><i>✦</i>
+      <span>Valentýn</span><i>✦</i>
+      <span>Jen tak pro radost</span>
+    </div>
+  </section>
+
+  <section class="section products-section" id="products">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">OBJEVTE FLOREA</p>
+        <h2>Sladké <em>momenty</em></h2>
+      </div>
+      <p>Vyberte dárek, který promění obyčejný den v nezapomenutelný okamžik.</p>
+    </div>
+
+    <div class="product-tools">
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="all">Vše</button>
+        <button class="filter" data-category="box">Dárkové dorty</button>
+        <button class="filter" data-category="bouquet">Sladké kytice</button>
+        <button class="filter" data-category="personal">Personalizované</button>
+      </div>
+      <div class="search-wrap">
+        <input type="search" id="productSearch" placeholder="Hledat produkt...">
+      </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="about-image">
+      <div class="about-card">
+        <span>F</span>
+        <p>FLOREA</p>
+      </div>
+    </div>
+    <div class="about-content">
+      <p class="eyebrow">PŘÍBĚH FLOREA</p>
+      <h2>Dárek nemusí být velký,<br><em>aby znamenal hodně.</em></h2>
+      <p>FLOREA vzniká z myšlenky, že nejkrásnější dárky jsou ty, které mají osobní význam. Každý detail má své místo a každý dárek může vyprávět vlastní příběh.</p>
+      <p>Naším cílem je spojit krásu, sladkou radost a možnost vytvořit něco opravdu osobního.</p>
+      <a href="#contact" class="text-link">Poznejte FLOREA <span>→</span></a>
+    </div>
+  </section>
+
+  <section class="how section" id="how">
+    <div class="center-heading">
+      <p class="eyebrow">JEDNODUŠE A KRÁSNĚ</p>
+      <h2>Jak objednat?</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><span>01</span><h3>Vyberte dárek</h3><p>Prohlédněte si naši nabídku a najděte ten pravý sladký moment.</p></div>
+      <div class="step"><span>02</span><h3>Přizpůsobte ho</h3><p>Přidejte věnování nebo další osobní požadavek.</p></div>
+      <div class="step"><span>03</span><h3>Odešlete objednávku</h3><p>Vyplňte jednoduchý formulář a zvolte způsob doručení.</p></div>
+      <div class="step"><span>04</span><h3>Potěšte své blízké</h3><p>FLOREA připraví váš dárek s důrazem na každý detail.</p></div>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <div class="quote-mark">“</div>
+    <blockquote>Nejkrásnější dárky nejsou o ceně. Jsou o pocitu, který v někom zanechají.</blockquote>
+    <p>FLOREA</p>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="contact-info">
+      <p class="eyebrow">NAPIŠTE NÁM</p>
+      <h2>Vytvořme něco<br><em>sladkého.</em></h2>
+      <p>Máte speciální přání nebo potřebujete poradit s výběrem? Jsme tu pro vás.</p>
+      <div class="contact-details">
+        <div><span>E-mail</span><strong>email@example.com</strong></div>
+        <div><span>Telefon</span><strong>+420 XXX XXX XXX</strong></div>
+        <div><span>Instagram</span><strong>@florea</strong></div>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <label>Jméno<input type="text" name="name" required placeholder="Vaše jméno"></label>
+      <label>E-mail<input type="email" name="email" required placeholder="vas@email.cz"></label>
+      <label>Zpráva<textarea name="message" required placeholder="Jak vám můžeme pomoci?"></textarea></label>
+      <button class="btn btn-dark" type="submit">Odeslat zprávu</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="#home" class="logo">FLOREA<span>✦</span></a>
+      <p>Sladké dárky vytvořené s láskou k detailu.</p>
+    </div>
+    <div class="footer-links"><h4>Navigace</h4><a href="#products">Produkty</a><a href="#about">O nás</a><a href="#how">Jak objednat</a><a href="#contact">Kontakt</a></div>
+    <div class="footer-links"><h4>Informace</h4><a href="#">Obchodní podmínky</a><a href="#">Ochrana osobních údajů</a></div>
+    <div class="footer-links"><h4>Sledujte nás</h4><a href="#">Instagram</a><a href="#">Facebook</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 FLOREA. Všechna práva vyhrazena.</span><span>Made with ♥</span></div>
+</footer>
+
+<div class="search-panel" id="searchPanel">
+  <button class="close-btn" id="closeSearch">×</button>
+  <p class="eyebrow">VYHLEDÁVÁNÍ</p>
+  <h2>Co hledáte?</h2>
+  <input type="search" id="globalSearch" placeholder="Název produktu...">
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-panel" id="cartPanel">
+  <div class="panel-head"><h2>Váš košík</h2><button class="close-btn" id="closeCart">×</button></div>
+  <div class="cart-items" id="cartItems"><p class="empty-cart">Váš košík je zatím prázdný.</p></div>
+  <div class="cart-footer">
+    <div><span>Celkem</span><strong id="cartTotal">0 Kč</strong></div>
+    <button class="btn btn-dark checkout-btn" id="checkoutBtn">Pokračovat k objednávce</button>
+  </div>
+</aside>
+
+<div class="chatbot">
+  <button class="chat-toggle" id="chatToggle" aria-label="Otevřít chat">✦</button>
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-head"><div><strong>FLOREA</strong><small>Asistent pro výběr dárku</small></div><button id="chatClose">×</button></div>
+    <div class="chat-messages" id="chatMessages"><div class="bot-message">Dobrý den, vítejte ve FLOREA. Pomohu vám vybrat sladký dárek.</div></div>
+    <div class="quick-replies">
+      <button data-message="Chci vybrat dárek">Vybrat dárek</button>
+      <button data-message="Potřebuji dárek k narozeninám">Narozeniny</button>
+      <button data-message="Chci personalizovaný dárek">Personalizovaný dárek</button>
+      <button data-message="Jak objednat?">Jak objednat?</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="productModal">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
